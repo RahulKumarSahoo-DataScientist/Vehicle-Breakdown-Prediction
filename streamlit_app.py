@@ -90,9 +90,13 @@ def predict(data):
 
 def main():
     html_temp = """
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <div style="background-color: #8A2BE2; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
     <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
-    <p style="color: white; text-align: center;">Enter the vehicle parameters on Top LeftSide to predict the condition.</p>
+    <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
     </div>
     </head>
     <marquee>Vehicle Breakdown Prediction</marquee>
