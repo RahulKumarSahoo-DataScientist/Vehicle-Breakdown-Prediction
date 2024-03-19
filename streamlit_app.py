@@ -95,15 +95,16 @@ def main():
         background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*');
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 50vh; /* Adjust the height as needed */
     }
     .content {
         padding: 20px;
         text-align: center;
     }
     .title {
-        color: white;
-        font-size: 36px;
+        color: purple; /* Change heading color to purple */
+        font-size: 48px; /* Increase font size */
+        font-weight: bold; /* Set font weight to bold */
         padding-bottom: 20px;
     }
     .subtitle {
