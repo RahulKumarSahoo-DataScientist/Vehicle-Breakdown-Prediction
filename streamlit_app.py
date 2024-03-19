@@ -91,8 +91,8 @@ def predict(data):
 def main():
     html_temp = """
     <div style="background-color: #6495ED; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-        <h1 style="color: white; text-align: center;">Vehicle Breakdown Prediction</h1>
-        <p style="color: white; text-align: center;">Enter the vehicle parameters below to predict the condition.</p>
+    <h1 style="color: #8A2BE2; text-align: center; border-bottom: 2px solid #8A2BE2; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
+    <p style="color: white; text-align: center;">Enter the vehicle parameters below to predict the condition.</p>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
