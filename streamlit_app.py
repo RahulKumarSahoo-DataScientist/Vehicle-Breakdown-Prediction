@@ -83,7 +83,7 @@ def predict(data, user, pw, db):
     prediction['Prediction'] = prediction['Prediction'].map({0: 'NO BREAKDOWN', 1: 'BREAKDOWN'})
     
     final = pd.concat([data, prediction], axis=1)
-    
+    f= final.to_sql('vehicle_predictions', con=engine, if_exists='replace', index=False)
     return final
 
 
