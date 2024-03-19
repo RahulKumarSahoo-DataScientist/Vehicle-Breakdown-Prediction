@@ -96,42 +96,34 @@ def main():
         <meta charset="UTF-8">
         <title>Vehicle Breakdown Prediction</title>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Pacifico');
-            @import url('https://fonts.googleapis.com/css?family=Arimo');
-            @import url('https://fonts.googleapis.com/css?family=Hind:300');
-            @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
             body {
-                font-family: 'Arimo', sans-serif;
-                font-weight: 300;
+                font-family: 'Arial', sans-serif;
                 background-color: #8A2BE2;
             }
-            h1 {
-                font-family: 'Pacifico', cursive;
-                font-size: 36px;
-                color: white;
-                text-align: center;
-                border-bottom: 2px solid white;
-                padding-bottom: 10px;
-            }
-            p {
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-size: 18px;
-                color: white;
-                text-align: center;
-            }
             .container {
+                background-color: #8A2BE2;
                 padding: 20px;
                 border-radius: 10px;
                 margin-bottom: 20px;
-                width: 80%;
-                margin: 0 auto;
                 text-align: center;
             }
             .truck-image {
                 display: block;
                 margin: 0 auto;
-                width: 25%;
+                width: 50%;
+            }
+            h1 {
+                color: white;
+                text-align: center;
+                border-bottom: 2px solid white;
+                padding-bottom: 10px;
+                font-family: 'Pacifico', cursive;
+                font-size: 36px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            p {
+                color: white;
+                text-align: center;
             }
         </style>
     </head>
