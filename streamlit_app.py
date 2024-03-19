@@ -110,7 +110,7 @@ def main():
             .truck-image {
                 display: block;
                 margin: 0 auto;
-                width: 25%;
+                width: 40%;
             }
             h1 {
                 color: white;
