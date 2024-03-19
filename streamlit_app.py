@@ -94,6 +94,9 @@ def main():
     <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
     <p style="color: white; text-align: center;">Enter the vehicle parameters below to predict the condition.</p>
     </div>
+    </head>
+    <marquee>Naive_Bayes</marquee>
+    <body style="background-color:white;">
     """
     st.markdown(html_temp, unsafe_allow_html=True)
     # Sidebar for manual input
