@@ -15,9 +15,6 @@ import pickle
 # In[3]:
 
 
-import os
-os.chdir(r"G:\360DIGITMG Internship Project\Project\Project1")
-
 
 # In[4]:
 
