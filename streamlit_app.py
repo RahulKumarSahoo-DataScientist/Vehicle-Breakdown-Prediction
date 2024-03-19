@@ -90,16 +90,59 @@ def predict(data):
 
 def main():
     html_temp = """
-    <div style="background-color: #8A2BE2; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" style="display: block; margin-left: auto; margin-right: auto; width: 25%;">
-    <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
-    <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
-    </div>
-    <title>Naive Bayes</title>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vehicle Breakdown Prediction</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico');
+            @import url('https://fonts.googleapis.com/css?family=Arimo');
+            @import url('https://fonts.googleapis.com/css?family=Hind:300');
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+            body {
+                font-family: 'Arimo', sans-serif;
+                font-weight: 300;
+                background-color: #8A2BE2;
+            }
+            h1 {
+                font-family: 'Pacifico', cursive;
+                font-size: 36px;
+                color: white;
+                text-align: center;
+                border-bottom: 2px solid white;
+                padding-bottom: 10px;
+            }
+            p {
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 18px;
+                color: white;
+                text-align: center;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .truck-image {
+                display: block;
+                margin: 0 auto;
+                width: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" class="truck-image">
+            <h1>Vehicle Breakdown Prediction</h1>
+            <p>Enter the vehicle parameters to predict the condition.</p>
+        </div>
+    </body>
+    </html>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
     # Sidebar for manual input
