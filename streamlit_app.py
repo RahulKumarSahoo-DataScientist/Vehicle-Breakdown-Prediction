@@ -90,10 +90,32 @@ def predict(data):
 
 def main():
     html_temp = """
-    <div style="background-color: #8A2BE2; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-    <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
-    <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
+    <style>
+    .bg-image {
+        background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+    .title {
+        color: white;
+        font-size: 36px;
+        padding-bottom: 20px;
+    }
+    .subtitle {
+        color: white;
+        font-size: 24px;
+    }
+    </style>
+    <div class="bg-image">
+        <div class="content">
+            <h1 class="title">Vehicle Breakdown Prediction</h1>
+            <p class="subtitle">Enter the vehicle parameters to predict the condition.</p>
+        </div>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
