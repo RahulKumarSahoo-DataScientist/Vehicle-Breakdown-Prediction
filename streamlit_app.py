@@ -90,34 +90,10 @@ def predict(data):
 
 def main():
     html_temp = """
-    <style>
-    .bg-image {
-        background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 40vh; /* Adjust the height as needed */
-        filter: brightness(50%); /* Decrease brightness of image */
-    }
-    .content {
-        padding: 20px;
-        text-align: center;
-    }
-    .top-heading {
-        color: #3a0ca3; /* Dark purple color for top heading */
-        font-size: 36px;
-        font-weight: bold;
-    }
-    .primary-heading {
-        color: black; /* Black color for primary heading */
-        font-size: 24px;
-        font-weight: bold;
-    }
-    </style>
-    <div class="bg-image">
-        <div class="content">
-            <h1 class="top-heading">Vehicle Breakdown Prediction</h1>
-            <h2 class="primary-heading">Enter the vehicle parameters to predict the condition.</h2>
-        </div>
+    <div style="background-color: #8A2BE2; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+    <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
+    <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
