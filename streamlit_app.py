@@ -73,8 +73,7 @@ def validate_input(column_name, value, min_value, max_value):
 # In[7]:
 
 
-def predict(data, user, pw, db):
-    engine = create_engine(f"mysql+pymysql://{user}:{pw}@localhost/{db}")
+def predict(data):
     clean = pd.DataFrame(impute.transform(data),columns=data.columns)
     clean1 = pd.DataFrame(winzor.transform(clean),columns=clean.columns)
     clean2 = pd.DataFrame(scale.transform(clean1),columns=clean1.columns)
@@ -125,15 +124,11 @@ def main():
     else:
         st.sidebar.warning("You need to upload a CSV or Excel file.")
 
-    # Sidebar for database credentials
-    st.sidebar.title("Database Credentials")
-    user = st.sidebar.text_input("User", "")
-    pw = st.sidebar.text_input("Password", "", type="password")
-    db = st.sidebar.text_input("Database", "")
+ 
 
     if st.sidebar.button("Predict From File"):
         if uploaded_file is not None:
-            result = predict(data, user, pw, db)
+            result = predict(data)
             st.success("Prediction Completed.")
             st.table(result)
         else:
