@@ -94,10 +94,10 @@ def main():
     <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" style="display: block; margin-left: auto; margin-right: auto; width: 25%;">
     <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
     <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
-    <h1 style="color:red;">Naive Bayes Classifier</h1>
-        <form  action = "/success" method = "POST" 
-            enctype="multipart/form-data">
     </div>
+    <h1 style="color:red;">Naive Bayes Classifier</h1>
+    <form  action = "/success" method = "POST" 
+    enctype="multipart/form-data">
     """
     st.markdown(html_temp, unsafe_allow_html=True)
     # Sidebar for manual input
