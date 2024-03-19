@@ -83,7 +83,6 @@ def predict(data, user, pw, db):
     prediction['Prediction'] = prediction['Prediction'].map({0: 'NO BREAKDOWN', 1: 'BREAKDOWN'})
     
     final = pd.concat([data, prediction], axis=1)
-    f= final.to_sql('vehicle_predictions', con=engine, if_exists='replace', index=False)
     return final
 
 
@@ -135,7 +134,7 @@ def main():
     if st.sidebar.button("Predict From File"):
         if uploaded_file is not None:
             result = predict(data, user, pw, db)
-            st.success("Prediction completed and saved to database.")
+            st.success("Prediction Completed.")
             st.table(result)
         else:
             st.error("Please upload a file first.")
