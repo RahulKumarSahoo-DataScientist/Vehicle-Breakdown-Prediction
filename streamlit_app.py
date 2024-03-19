@@ -89,12 +89,13 @@ def predict(data):
 
 
 def main():
-    st.set_page_config(page_title="Vehicle Breakdown Prediction", page_icon="🚗")
-
-    # Title and description
-    st.title("Vehicle Breakdown Prediction")
-    st.write("Enter the vehicle parameters below to predict the condition.")
-
+    html_temp = """
+    <div style="background-color: #6495ED; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <h1 style="color: white; text-align: center;">Vehicle Breakdown Prediction</h1>
+        <p style="color: white; text-align: center;">Enter the vehicle parameters below to predict the condition.</p>
+    </div>
+    """
+    st.markdown(html_temp, unsafe_allow_html=True)
     # Sidebar for manual input
     st.sidebar.title("Manual Input")
     Engine_rpm = st.sidebar.number_input("Engine_rpm (Range 61 to 2239)", step=1, value=None)
