@@ -10,7 +10,7 @@ import streamlit as st
 from sqlalchemy import create_engine
 import joblib
 import pickle
-
+import seaborn as sns
 
 # In[3]:
 
@@ -130,7 +130,8 @@ def main():
         if uploaded_file is not None:
             result = predict(data)
             st.success("Prediction Completed.")
-            st.table(result)
+            cm = sns.light_palette("blue", as_cmap=True)
+            st.table(result.style.background_gradient(cmap=cm))
         else:
             st.error("Please upload a file first.")
     
