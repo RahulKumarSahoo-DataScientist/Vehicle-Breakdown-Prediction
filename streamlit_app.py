@@ -96,12 +96,8 @@ def main():
         <meta charset="UTF-8">
         <title>Vehicle Breakdown Prediction</title>
         <style>
-        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
             body {
-                font-family: 'Arial', sans-serif;
+                font-family: 'Vast Shadow', Nicole Fally;
                 background-color: #8A2BE2;
             }
             .container {
