@@ -91,11 +91,11 @@ def predict(data):
 def main():
     html_temp = """
     <meta charset="UTF-8">
-         <title>Naive Bayes</title>
-         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <title>Naive Bayes</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <div style="background-color: #8A2BE2; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
     <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-614268352-1541527665.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Truck" style="display: block; margin-left: auto; margin-right: auto; width: 25%;">
     <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
