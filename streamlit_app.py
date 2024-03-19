@@ -95,7 +95,6 @@ def main():
     <h1 style="color: white; text-align: center; border-bottom: 2px solid white; padding-bottom: 10px;">Vehicle Breakdown Prediction</h1>
     <p style="color: white; text-align: center;">Enter the vehicle parameters to predict the condition.</p>
     </div>
-    <meta charset="UTF-8">
     <title>Naive Bayes</title>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
