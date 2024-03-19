@@ -89,7 +89,11 @@ def predict(data):
 
 
 def main():
+    st.set_page_config(page_title="Vehicle Breakdown Prediction", page_icon="🚗")
+
+    # Title and description
     st.title("Vehicle Breakdown Prediction")
+    st.write("Enter the vehicle parameters below to predict the condition.")
 
     # Sidebar for manual input
     st.sidebar.title("Manual Input")
